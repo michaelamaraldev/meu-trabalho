@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Michael Amaral da Silva</title>
+    <style>
+        body {
+            background-color: #fbfdf8; /* cor off-white, quase amarela*/
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: crimson;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        ul {
+            line-height: 2;
+        }
+
+        .hobby-img {
+            width: 200px;
+            border-radius: 15px;
+            display: block;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #999;
+            text-align: center;
+            padding: 10px;
+        }
+
+        table img {
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #e74c3c;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .destaque-amarelo {
+            color: #f1c40f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Michael Amaral da Silva</h1>
+
+    <p>
+         Meu nome é Michael, tenho 27 anos e moro em Campinas - SP. Desde criança sou apaixonado por tecnologia, jogos e mídias - principalmente filmes, que são uma das minhas maiores paixões. Meu filme favorito é <strong>Ran</strong>, do diretor japonês Akira Kurosawa. Meu desejo atual é me tornar desenvolvedor full-stack, atuando na criação e melhoria de aplicações.  
+        Ah, e sou apaixonado pela cor <span class="destaque-amarelo">amarela</span>! =D
+    </p>
+
+    <ul>
+        <li>Assistir filme</li>
+        <li>Jogar videogame</li>
+        <li>Explorar novas tecnologias</li>
+    </ul>
+
+    <img src="assistir-filme.jpg" alt="Assistir filme" class="hobby-img">
+
+    <table>
+        <thead>
+            <tr>
+                <th>País</th>
+                <th>Imagem</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Suíça</td>
+                <td><img src="bandeira-da-suica.png" alt="Suíça"></td>
+            </tr>
+            <tr>
+                <td>Noruega</td>
+                <td><img src="bandeira-da-noruega.png" alt="Noruega"></td>
+            </tr>
+            <tr>
+                <td>Japão</td>
+                <td><img src="bandeira-do-japao.jpg" alt="Japão"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="https://x.com" target="_blank">Visite o site que eu mais acesso</a>
+
+    <br><br>
+    <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+    <p id="mensagem"></p>
+
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").textContent = "Olá! Esse é meu mundinho!!! :)";
+        }
+    </script>
+</body>
+</html>
